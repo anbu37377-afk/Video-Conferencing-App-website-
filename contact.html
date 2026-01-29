@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | NexusMeet Support</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3536/3536445.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-video"></i><span>NexusMeet</span></a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home 1</a>
+                <a href="home2.html" class="nav-link">Home 2</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="about.html" class="nav-link">About</a>
+
+                <a href="dashboard.html" class="nav-link"> Dashboard</a>
+
+            </nav>
+            <div class="auth-btns">
+                <button id="theme-toggle" class="btn" style="background:none; color:var(--primary); font-size:1.2rem;">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="hamburger"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">
+                <i class="fas fa-video"></i>
+                <span>NexusMeet</span>
+            </a>
+            <button class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="index.html" class="nav-link">Home 1</a>
+            <a href="home2.html" class="nav-link">Home 2</a>
+            <a href="features.html" class="nav-link">Features</a>
+            <a href="pricing.html" class="nav-link">Pricing</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+        </nav>
+        <div class="mobile-auth-btns">
+            <a href="login.html" class="btn btn-outline">Login</a>
+            <a href="register.html" class="btn btn-primary">Sign Up</a>
+        </div>
+    </div>
+    <div class="menu-overlay"></div>
+
+    <main style="margin-top: 70px;">
+        <section class="section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h1 class="reveal-on-scroll">How can we <span style="color: var(--accent);">help?</span></h1>
+                    <p>Our team is here to support your communication needs. Reach out to us anytime.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem;">
+                    <div class="reveal-on-scroll">
+                        <div class="glass" style="padding: 2.5rem; border-radius: 20px; margin-bottom: 2rem;">
+                            <h3>Reach out directly</h3>
+                            <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1.5rem;">
+                                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                    <i class="fas fa-envelope" style="color: var(--accent); margin-top: 0.3rem;"></i>
+                                    <div>
+                                        <h4 style="margin: 0;">Email Us</h4>
+                                        <p style="margin: 0;">support@nexusmeet.com</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                    <i class="fas fa-phone" style="color: var(--accent); margin-top: 0.3rem;"></i>
+                                    <div>
+                                        <h4 style="margin: 0;">Call Us</h4>
+                                        <p style="margin: 0;">+1 (800) 555-0123</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                    <i class="fas fa-location-dot"
+                                        style="color: var(--accent); margin-top: 0.3rem;"></i>
+                                    <div>
+                                        <h4 style="margin: 0;">Our Office</h4>
+                                        <p style="margin: 0;">123 Tech Plaza, San Francisco, CA 94105</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini Map Mockup -->
+                        <div style="height: 250px; border-radius: 20px; overflow: hidden; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=800"
+                                alt="Map"
+                                style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.2);">
+                            <div
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: var(--accent); font-size: 2rem;">
+                                <i class="fas fa-location-pin"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass reveal-on-scroll" style="padding: 3rem; border-radius: 20px;">
+                        <form style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <label style="font-weight: 600; font-size: 0.9rem;">First Name</label>
+                                    <input type="text" placeholder="John"
+                                        style="padding: 0.8rem; border-radius: 8px; outline: none;">
+                                </div>
+                                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <label style="font-weight: 600; font-size: 0.9rem;">Last Name</label>
+                                    <input type="text" placeholder="Doe"
+                                        style="padding: 0.8rem; border-radius: 8px; outline: none;">
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <label style="font-weight: 600; font-size: 0.9rem;">Work Email</label>
+                                <input type="email" placeholder="john@company.com"
+                                    style="padding: 0.8rem; border-radius: 8px; outline: none;">
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <label style="font-weight: 600; font-size: 0.9rem;">Subject</label>
+                                <select style="padding: 0.8rem; border-radius: 8px; outline: none;">
+                                    <option>Sales Inquiry</option>
+                                    <option>Technical Support</option>
+                                    <option>Partnership</option>
+                                    <option>General Question</option>
+                                </select>
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <label style="font-weight: 600; font-size: 0.9rem;">Message</label>
+                                <textarea placeholder="How can we help you?"
+                                    style="padding: 0.8rem; border-radius: 8px; outline: none; min-height: 150px; resize: vertical;"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary" style="padding: 1rem;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 1.5rem;">
+                        <i class="fas fa-video"></i>
+                        <span>NexusMeet</span>
+                    </a>
+                    <p style="color: #94A3B8;">Next-generation video communication platform built for the modern
+                        enterprise. Secure, reliable, and incredibly fast.</p>
+                    <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="features.html">Features</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Careers</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <div class="footer-links">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Help Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <div class="footer-links">
+                        <a href="pricing.html">Pricing</a>
+                        <a href="dashboard/index.html">Dashboard</a>
+                        <a href="register.html">Sign Up</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 NexusMeet Inc. All rights reserved.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#">Sitemap</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Meetings | NexusMeet Home 2</title>
+    <meta name="description"
+        content="Secure, scalable video conferencing for large teams and organizations. Built for the modern enterprise.">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3536/3536445.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --primary: #020617;
+            /* Even deeper for enterprise */
+            --accent-glow: rgba(14, 165, 233, 0.15);
+        }
+
+        body {
+            background-color: #020617;
+            color: white;
+        }
+
+        header {
+            background: rgba(2, 6, 23, 0.8) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        }
+
+        .nav-link {
+            color: #94A3B8 !important;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--accent) !important;
+        }
+
+        .logo {
+            color: white !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: white !important;
+        }
+
+        p {
+            color: #94A3B8 !important;
+        }
+
+        .glass {
+            background: rgba(15, 23, 42, 0.6) !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-video"></i>
+                <span>NexusMeet</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home 1</a>
+                <a href="home2.html" class="nav-link active">Home 2</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="about.html" class="nav-link">About</a>
+
+                <a href="dashboard.html" class="nav-link"> Dashboard</a>
+
+            </nav>
+
+            <div class="auth-btns">
+                <button id="theme-toggle" class="btn" style="background:none; color:var(--primary); font-size:1.2rem;">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Start Trial</a>
+            </div>
+
+            <button class="hamburger" style="color: var(--primary);">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">
+                <i class="fas fa-video"></i>
+                <span>NexusMeet</span>
+            </a>
+            <button class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="index.html" class="nav-link">Home 1</a>
+            <a href="home2.html" class="nav-link active">Home 2</a>
+            <a href="features.html" class="nav-link">Features</a>
+            <a href="pricing.html" class="nav-link">Pricing</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+        </nav>
+        <div class="mobile-auth-btns">
+            <a href="login.html" class="btn btn-outline">Login</a>
+            <a href="register.html" class="btn btn-primary">Sign Up</a>
+        </div>
+    </div>
+    <div class="menu-overlay"></div>
+
+    <main style="margin-top: 70px;">
+        <!-- Section 1: Enterprise Hero -->
+        <section class="section"
+            style="padding: 120px 0; position: relative; overflow: hidden; min-height: 80vh; display: flex; align-items: center;">
+            <div
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 80% 20%, #0c4a6e 0%, #020617 100%); z-index: -1;">
+            </div>
+            <div class="container"
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="reveal-on-scroll">
+                    <span
+                        style="display: inline-block; padding: 6px 16px; background: var(--accent-glow); color: var(--accent); border-radius: 50px; font-size: 0.85rem; font-weight: 700; margin-bottom: 2rem; border: 1px solid var(--accent);">FOR
+                        GLOBAL ENTERPRISE</span>
+                    <h1 style="font-size: 4.5rem; line-height: 1.1;">Scale your <span style="color: var(--accent);">team
+                            meetings</span> without limits.</h1>
+                    <p style="font-size: 1.25rem; margin: 2rem 0 3rem;">Deliver a unified communication experience with
+                        bank-grade security and 99.99% uptime for organizations of any size.</p>
+                    <div style="display: flex; gap: 1.5rem;">
+                        <a href="contact.html" class="btn btn-primary" style="padding: 1.25rem 3rem;">Book Demo</a>
+                        <a href="#infra" class="btn btn-outline" style="color: white; border-color: white;">View
+                            Infrastructure</a>
+                    </div>
+                </div>
+                <div class="reveal-on-scroll" style="position: relative;">
+                    <div
+                        style="background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%); border: 1px solid rgba(255,255,255,0.1); border-radius: 30px; padding: 20px; box-shadow: 0 40px 100px rgba(0,0,0,0.5);">
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1200"
+                            alt="Tech Office" style="border-radius: 20px; width: 100%;">
+                    </div>
+                    <!-- Floating Stat -->
+                    <div class="glass"
+                        style="position: absolute; top: -30px; right: -20px; padding: 1.5rem; border-radius: 16px;">
+                        <h3 style="margin: 0; color: var(--accent) !important;">10,000+</h3>
+                        <p style="margin: 0; font-size: 0.8rem;">Concurrent Participants</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Global Infrastructure -->
+        <section id="infra" class="section" style="background: rgba(255,255,255,0.02);">
+            <div class="container">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto 5rem;">
+                    <h2 style="font-size: 3rem;">Low Latency, <span style="color: var(--accent);">High
+                            Reliability</span></h2>
+                    <p>Our global edge network ensures that your meetings stay connected with sub-50ms latency,
+                        regardless of where your team members are located.</p>
+                </div>
+                <div style="position: relative;">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200"
+                        alt="Global Network"
+                        style="border-radius: 24px; width: 100%; height: 500px; object-fit: cover; opacity: 0.6; filter: grayscale(1) brightness(0.8);">
+                    <div
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); align-items: center; gap: 2rem; padding: 2rem;">
+                        <div class="glass reveal-on-scroll" style="padding: 2rem;">
+                            <i class="fas fa-server"
+                                style="color: var(--accent); font-size: 2rem; margin-bottom: 1.5rem;"></i>
+                            <h3>25+ Global Regions</h3>
+                            <p>Edge servers in Tokyo, London, NYC, and more for local peering.</p>
+                        </div>
+                        <div class="glass reveal-on-scroll" style="padding: 2rem;">
+                            <i class="fas fa-shield-virus"
+                                style="color: var(--accent); font-size: 2rem; margin-bottom: 1.5rem;"></i>
+                            <h3>DDoS Protection</h3>
+                            <p>Military-grade mitigation against all forms of network attacks.</p>
+                        </div>
+                        <div class="glass reveal-on-scroll" style="padding: 2rem;">
+                            <i class="fas fa-bolt"
+                                style="color: var(--accent); font-size: 2rem; margin-bottom: 1.5rem;"></i>
+                            <h3>99.99% Uptime</h3>
+                            <p>Redundant infrastructure with automatic failover protocols.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Native Integrations -->
+        <section class="section">
+            <div class="container">
+                <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4rem;">
+                    <div class="reveal-on-scroll" style="max-width: 800px;">
+                        <h2 style="font-size: 3rem; margin-bottom: 1.5rem;">Seamless <span
+                                style="color: var(--accent);">workflow</span>
+                            integration.</h2>
+                        <p style="margin: 0 auto 2.5rem; font-size: 1.1rem; max-width: 700px;">NexusMeet works where you
+                            work. We provide native plugins
+                            and deep API integrations with the tools your enterprise depends on every day.</p>
+                        <div
+                            style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem 4rem; margin-bottom: 4rem;">
+                            <div
+                                style="display: flex; align-items: center; gap: 1rem; min-width: 150px; justify-content: center;">
+                                <div
+                                    style="width: 48px; height: 48px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                    <i class="fab fa-slack" style="color: #4A154B; font-size: 1.5rem;"></i>
+                                </div>
+                                <span style="font-weight: 600;">Slack Sync</span>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; gap: 1rem; min-width: 150px; justify-content: center;">
+                                <div
+                                    style="width: 48px; height: 48px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                    <i class="fab fa-microsoft" style="color: #00A4EF; font-size: 1.5rem;"></i>
+                                </div>
+                                <span style="font-weight: 600;">Teams Bridge</span>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; gap: 1rem; min-width: 150px; justify-content: center;">
+                                <div
+                                    style="width: 48px; height: 48px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                    <i class="fab fa-google" style="color: #4285F4; font-size: 1.5rem;"></i>
+                                </div>
+                                <span style="font-weight: 600;">Workspace</span>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; gap: 1rem; min-width: 150px; justify-content: center;">
+                                <div
+                                    style="width: 48px; height: 48px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                    <i class="fas fa-code-branch" style="color: #333; font-size: 1.5rem;"></i>
+                                </div>
+                                <span style="font-weight: 600;">GitHub API</span>
+                            </div>
+                        </div>
+                        <a href="features.html" class="btn btn-primary">View All
+                            Integrations</a>
+                    </div>
+                    <div class="reveal-on-scroll" style="width: 100%; max-width: 1000px;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bbbda546697a?auto=format&fit=crop&q=80&w=1200"
+                            alt="Communication Dashboard"
+                            style="border-radius: 24px; box-shadow: 0 40px 100px rgba(0,0,0,0.5); width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Enterprise Controls -->
+        <section class="section" style="background: #0ea5e9; color: white;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div class="reveal-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&q=80&w=1200"
+                            alt="Director Office" style="border-radius: 24px; box-shadow: 0 30px 60px rgba(0,0,0,0.3);">
+                    </div>
+                    <div class="reveal-on-scroll">
+                        <h2 style="color: white !important; font-size: 2.75rem;">Full Admin <span
+                                style="color: #020617;">Visibility.</span></h2>
+                        <p style="color: rgba(255,255,255,0.8) !important; margin: 2rem 0;">Get deep insights into
+                            meeting metrics, participant engagement, and network performance across your entire
+                            organization with our centralized dashboard.</p>
+                        <ul style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <li style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fas fa-check-circle" style="color: #020617;"></i>
+                                <span>Audit logs and compliance reporting</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fas fa-check-circle" style="color: #020617;"></i>
+                                <span>Resource allocation and provisioning</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fas fa-check-circle" style="color: #020617;"></i>
+                                <span>Granular permissions and role-based access</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Enterprise CTA -->
+        <section class="section" style="padding: 120px 0; text-align: center;">
+            <div class="container reveal-on-scroll">
+                <h2 style="font-size: 3.5rem;">Ready to upgrade your enterprise?</h2>
+                <p style="font-size: 1.25rem; margin-bottom: 3.5rem;">Join the global leaders who trust NexusMeet for
+                    their mission-critical communications.</p>
+                <div style="display: flex; gap: 1.5rem; justify-content: center;">
+                    <a href="contact.html" class="btn btn-primary" style="padding: 1.25rem 3.5rem;">Talk to Sales</a>
+                    <a href="register.html" class="btn btn-outline" style="color: white; border-color: white;">Pricing
+                        Plans</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 1.5rem;">
+                        <i class="fas fa-video"></i>
+                        <span>NexusMeet</span>
+                    </a>
+                    <p style="color: #94A3B8;">Next-generation video communication platform built for the modern
+                        enterprise. Secure, reliable, and incredibly fast.</p>
+                    <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="features.html">Features</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Careers</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <div class="footer-links">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Help Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <div class="footer-links">
+                        <a href="pricing.html">Pricing</a>
+                        <a href="dashboard/index.html">Dashboard</a>
+                        <a href="register.html">Sign Up</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 NexusMeet Inc. All rights reserved.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#">Sitemap</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

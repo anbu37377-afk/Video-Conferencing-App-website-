@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | NexusMeet</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3536/3536445.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            margin: 0;
+            padding: 2rem 0;
+        }
+
+        .auth-card {
+            width: 100%;
+            max-width: 440px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2.25rem;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .auth-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .auth-logo i {
+            color: var(--accent);
+        }
+
+        .input-group {
+            text-align: left;
+            margin-bottom: 1rem;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .input-group input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+
+        .social-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            margin-top: 1rem;
+        }
+
+        .social-btn {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--secondary);
+            margin: 1rem 0;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #e2e8f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="auth-card">
+        <a href="index.html" class="auth-logo">
+            <i class="fas fa-video"></i>
+            <span>NexusMeet</span>
+        </a>
+        <h2 style="margin-bottom: 0.25rem; font-size: 1.5rem;">Create Account</h2>
+        <p style="margin-bottom: 0.75rem; font-size: 0.85rem;">Join 50,000+ teams today</p>
+        <form action="dashboard/index.html">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required style="padding: 0.75rem;">
+                </div>
+                <div class="input-group">
+                    <label>Working Email</label>
+                    <input type="email" placeholder="john@company.com" required style="padding: 0.75rem;">
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Company Name</label>
+                <input type="text" placeholder="NexusMeet Inc." required style="padding: 0.75rem;">
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="At least 8 characters" required style="padding: 0.75rem;">
+            </div>
+            <div style="text-align: left; margin-bottom: 1rem;">
+                <label
+                    style="display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.75rem; color: var(--secondary); cursor: pointer;">
+                    <input type="checkbox" style="margin-top: 0.15rem;" required>
+                    <span>By signing up, I agree to the <a href="#" style="color: var(--accent);">Terms</a>
+                        and <a href="#" style="color: var(--accent);">Privacy</a>.</span>
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.85rem;">Create Free
+                Account</button>
+        </form>
+
+        <div class="divider">OR</div>
+
+        <div class="social-btns">
+            <button class="social-btn"><i class="fab fa-google" style="color: #EA4335;"></i> Google</button>
+            <button class="social-btn"><i class="fab fa-microsoft" style="color: #00A4EF;"></i> Microsoft</button>
+        </div>
+
+        <p style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--secondary);">
+            Already have an account? <a href="login.html" style="color: var(--accent); font-weight: 600;">Log in</a>
+        </p>
+    </div>
+</body>
+
+</html>

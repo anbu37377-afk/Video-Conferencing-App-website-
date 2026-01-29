@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | NexusMeet Insights</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3536/3536445.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-video"></i><span>NexusMeet</span></a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home 1</a>
+                <a href="home2.html" class="nav-link">Home 2</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="about.html" class="nav-link">About</a>
+
+                <a href="dashboard.html" class="nav-link"> Dashboard</a>
+
+            </nav>
+            <div class="auth-btns">
+                <button id="theme-toggle" class="btn" style="background:none; color:var(--primary); font-size:1.2rem;">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="hamburger"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">
+                <i class="fas fa-video"></i>
+                <span>NexusMeet</span>
+            </a>
+            <button class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="index.html" class="nav-link">Home 1</a>
+            <a href="home2.html" class="nav-link">Home 2</a>
+            <a href="features.html" class="nav-link">Features</a>
+            <a href="pricing.html" class="nav-link">Pricing</a>
+            <a href="blog.html" class="nav-link active">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+        </nav>
+        <div class="mobile-auth-btns">
+            <a href="login.html" class="btn btn-outline">Login</a>
+            <a href="register.html" class="btn btn-primary">Sign Up</a>
+        </div>
+    </div>
+    <div class="menu-overlay"></div>
+
+    <main style="margin-top: 70px;">
+        <section class="section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h1>The <span style="color: var(--accent);">Modern</span> Workplace Blog</h1>
+                    <p>Insights, tips, and trends on remote work and team collaboration.</p>
+
+                    <div style="max-width: 600px; margin: 3rem auto 0; display: flex; gap: 1rem;">
+                        <div style="flex: 1; position: relative;">
+                            <i class="fas fa-search"
+                                style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--secondary);"></i>
+                            <input type="text" placeholder="Search articles..."
+                                style="width: 100%; padding: 1rem 1rem 1rem 3rem; border-radius: 50px; outline: none;">
+                        </div>
+                        <select style="padding: 0 1.5rem; border-radius: 50px; outline: none;">
+                            <option>All Categories</option>
+                            <option>Productivity</option>
+                            <option>Remote Work</option>
+                            <option>Technology</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem;">
+                    <!-- Blog post 1 -->
+                    <article class="glass reveal-on-scroll" style="border-radius: 20px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
+                            alt="Blog 1" style="width: 100%; height: 240px; object-fit: cover;">
+                        <div style="padding: 2rem;">
+                            <span
+                                style="color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Productivity</span>
+                            <h3 style="margin: 1rem 0;">10 Tips for Effective Virtual Team Meetings</h3>
+                            <p>Discover how to keep your team engaged and productive during online sessions with these
+                                simple strategies.</p>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem;">
+                                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <img src="https://i.pravatar.cc/150?u=jane"
+                                        style="width: 35px; height: 35px; border-radius: 50%;">
+                                    <span style="font-size: 0.9rem; font-weight: 600;">Jane Smith</span>
+                                </div>
+                                <a href="blog-details.html" class="btn btn-outline"
+                                    style="padding: 0.5rem 1rem; font-size: 0.85rem;">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog post 2 -->
+                    <article class="glass reveal-on-scroll" style="border-radius: 20px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&q=80&w=800"
+                            alt="Blog 2" style="width: 100%; height: 240px; object-fit: cover;">
+                        <div style="padding: 2rem;">
+                            <span
+                                style="color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Technology</span>
+                            <h3 style="margin: 1rem 0;">The Future of 4K Video Conferencing</h3>
+                            <p>How low-latency networks and AI-enhanced video are changing the landscape of professional
+                                communication.</p>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem;">
+                                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <img src="https://i.pravatar.cc/150?u=mike"
+                                        style="width: 35px; height: 35px; border-radius: 50%;">
+                                    <span style="font-size: 0.9rem; font-weight: 600;">Mike Johnson</span>
+                                </div>
+                                <a href="blog-details.html" class="btn btn-outline"
+                                    style="padding: 0.5rem 1rem; font-size: 0.85rem;">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog post 3 -->
+                    <article class="glass reveal-on-scroll" style="border-radius: 20px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
+                            alt="Blog 3" style="width: 100%; height: 240px; object-fit: cover;">
+                        <div style="padding: 2rem;">
+                            <span
+                                style="color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Remote
+                                Work</span>
+                            <h3 style="margin: 1rem 0;">Cybersecurity Essentials for Remote Teams</h3>
+                            <p>Keep your corporate data safe with these essential security practices for distributed
+                                workforces.</p>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem;">
+                                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <img src="https://i.pravatar.cc/150?u=emily"
+                                        style="width: 35px; height: 35px; border-radius: 50%;">
+                                    <span style="font-size: 0.9rem; font-weight: 600;">Emily Davis</span>
+                                </div>
+                                <a href="blog-details.html" class="btn btn-outline"
+                                    style="padding: 0.5rem 1rem; font-size: 0.85rem;">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog post 4 -->
+                    <article class="glass reveal-on-scroll" style="border-radius: 20px; overflow: hidden;">
+                        <img src="assets/blog_4.png" alt="Blog 4"
+                            style="width: 100%; height: 240px; object-fit: cover;">
+                        <div style="padding: 2rem;">
+                            <span
+                                style="color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Innovation</span>
+                            <h3 style="margin: 1rem 0;">Meetings in the Metaverse: VR is Here</h3>
+                            <p>Step beyond the screen. Explore how Virtual Reality is creating truly immersive
+                                collaboration spaces for global teams.</p>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem;">
+                                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <img src="https://i.pravatar.cc/150?u=alex"
+                                        style="width: 35px; height: 35px; border-radius: 50%;">
+                                    <span style="font-size: 0.9rem; font-weight: 600;">Alex Carter</span>
+                                </div>
+                                <a href="blog-details.html" class="btn btn-outline"
+                                    style="padding: 0.5rem 1rem; font-size: 0.85rem;">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog post 5 -->
+                    <article class="glass reveal-on-scroll" style="border-radius: 20px; overflow: hidden;">
+                        <img src="assets/blog_5.png" alt="Blog 5"
+                            style="width: 100%; height: 240px; object-fit: cover;">
+                        <div style="padding: 2rem;">
+                            <span
+                                style="color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Productivity</span>
+                            <h3 style="margin: 1rem 0;">The Power of Async Communication</h3>
+                            <p>Break free from constant notifications. Learn how asynchronous work can unlock deep focus
+                                and higher team throughput.</p>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem;">
+                                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <img src="https://i.pravatar.cc/150?u=sarah"
+                                        style="width: 35px; height: 35px; border-radius: 50%;">
+                                    <span style="font-size: 0.9rem; font-weight: 600;">Sarah Wilson</span>
+                                </div>
+                                <a href="blog-details.html" class="btn btn-outline"
+                                    style="padding: 0.5rem 1rem; font-size: 0.85rem;">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog post 6 -->
+                    <article class="glass reveal-on-scroll" style="border-radius: 20px; overflow: hidden;">
+                        <img src="assets/blog_6.png" alt="Blog 6"
+                            style="width: 100%; height: 240px; object-fit: cover;">
+                        <div style="padding: 2rem;">
+                            <span
+                                style="color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Wellness</span>
+                            <h3 style="margin: 1rem 0;">Battling Burnout in a Remote World</h3>
+                            <p>Essential mental health strategies to maintain a healthy work-life boundary while working
+                                from the comfort of your home.</p>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem;">
+                                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <img src="https://i.pravatar.cc/150?u=david"
+                                        style="width: 35px; height: 35px; border-radius: 50%;">
+                                    <span style="font-size: 0.9rem; font-weight: 600;">David Miller</span>
+                                </div>
+                                <a href="blog-details.html" class="btn btn-outline"
+                                    style="padding: 0.5rem 1rem; font-size: 0.85rem;">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 5rem;">
+                    <button class="btn btn-outline" style="min-width: 45px; padding: 0.5rem;">1</button>
+                    <button class="btn" style="background: none; min-width: 45px; padding: 0.5rem;">2</button>
+                    <button class="btn" style="background: none; min-width: 45px; padding: 0.5rem;">3</button>
+                    <button class="btn" style="background: none; min-width: 45px; padding: 0.5rem;"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <!-- Success Stories Section -->
+        <section class="section">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div class="reveal-on-scroll">
+                        <span
+                            style="color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">Customer
+                            Success</span>
+                        <h2 style="margin: 1rem 0;">How <span style="color: var(--accent);">CloudTech</span> Scaled
+                            Their Global Operations.</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--secondary);">"NexusMeet didn't just
+                            give us a video tool; they gave us a virtual headquarters. We've seen a 40% increase in
+                            cross-departmental collaboration since switching."</p>
+                        <div style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem;">
+                            <img src="https://i.pravatar.cc/150?u=ceo"
+                                style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid var(--accent);">
+                            <div>
+                                <h4 style="margin: 0;">Robert Chen</h4>
+                                <p style="margin: 0; font-size: 0.9rem; color: var(--secondary);">CEO, CloudTech Systems
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal-on-scroll">
+                        <img src="assets/success_story.png" alt="Success Story Team"
+                            style="border-radius: 30px; box-shadow: var(--card-shadow); width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Library Section -->
+        <section class="section" style="background: var(--bg-light);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h2 class="reveal-on-scroll">Video <span style="color: var(--accent);">Masterclass.</span></h2>
+                    <p>Learn from the pros with our curated video tutorials and expert webinars.</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- Video Card 1 -->
+                    <div class="glass reveal-on-scroll"
+                        style="border-radius: 20px; overflow: hidden; position: relative; cursor: pointer;">
+                        <img src="assets/webinar.png"
+                            style="width: 100%; height: 200px; object-fit: cover; opacity: 0.8;">
+                        <div
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                            <i class="fas fa-play" style="color: var(--accent); margin-left: 5px;"></i>
+                        </div>
+                        <div style="padding: 1.5rem;">
+                            <h4 style="margin-bottom: 0.5rem;">Webinar: The Future of AI in Video</h4>
+                            <p style="font-size: 0.85rem; color: var(--secondary);">Join our CTO as he explores the next
+                                frontier of virtual communication technology.</p>
+                        </div>
+                    </div>
+                    <!-- Video Card 2 -->
+                    <div class="glass reveal-on-scroll"
+                        style="border-radius: 20px; overflow: hidden; position: relative; cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800"
+                            style="width: 100%; height: 200px; object-fit: cover; opacity: 0.8;">
+                        <div
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-play" style="color: var(--accent); margin-left: 5px;"></i>
+                        </div>
+                        <div style="padding: 1.5rem;">
+                            <h4 style="margin-bottom: 0.5rem;">10x Your Meeting Productivity</h4>
+                            <p style="font-size: 0.85rem; color: var(--secondary);">Quick tips on using NexusMeet's
+                                advanced shortcuts and integrations.</p>
+                        </div>
+                    </div>
+                    <!-- Video Card 3 -->
+                    <div class="glass reveal-on-scroll"
+                        style="border-radius: 20px; overflow: hidden; position: relative; cursor: pointer;">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
+                            style="width: 100%; height: 200px; object-fit: cover; opacity: 0.8;">
+                        <div
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-play" style="color: var(--accent); margin-left: 5px;"></i>
+                        </div>
+                        <div style="padding: 1.5rem;">
+                            <h4 style="margin-bottom: 0.5rem;">Security & Compliance 101</h4>
+                            <p style="font-size: 0.85rem; color: var(--secondary);">Deep dive into E2EE and custom
+                                security settings for enterprise teams.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Center Section -->
+        <section class="section">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 400px 1fr; gap: 5rem; align-items: center;">
+                    <div class="reveal-on-scroll">
+                        <img src="assets/ebook.png" alt="Advanced Guide Mockup"
+                            style="width: 100%; transform: perspective(1000px) rotateY(-5deg); filter: drop-shadow(30px 30px 50px rgba(0,0,0,0.1));">
+                    </div>
+                    <div class="reveal-on-scroll">
+                        <h2 style="margin-bottom: 1.5rem;">Advanced <span style="color: var(--accent);">Learning
+                                Center.</span></h2>
+                        <p style="font-size: 1.1rem; color: var(--secondary); margin-bottom: 2.5rem;">Elevate your
+                            professional skills with our exclusive library of whitepapers, industry reports, and
+                            strategy guides. Free for all NexusMeet users.</p>
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <div
+                                style="display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem; background: var(--bg-light); border-radius: 12px;">
+                                <i class="fas fa-file-pdf" style="font-size: 2rem; color: #ef4444;"></i>
+                                <div style="flex: 1;">
+                                    <h4 style="margin: 0;">The State of Hybrid Work 2026</h4>
+                                    <p style="margin: 0; font-size: 0.85rem; color: var(--secondary);">42-page
+                                        comprehensive industry report.</p>
+                                </div>
+                                <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem;">Download</a>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem; background: var(--bg-light); border-radius: 12px;">
+                                <i class="fas fa-bolt" style="font-size: 2rem; color: #f59e0b;"></i>
+                                <div style="flex: 1;">
+                                    <h4 style="margin: 0;">Meeting Culture Masterclass</h4>
+                                    <p style="margin: 0; font-size: 0.85rem; color: var(--secondary);">Quick-start guide
+                                        for high-performance teams.</p>
+                                </div>
+                                <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem;">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Trending Topics Section -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 class="reveal-on-scroll">Trending <span style="color: var(--accent);">Insights.</span></h2>
+                <p>What everyone is reading right now.</p>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 1100px; margin: 0 auto;">
+                <!-- Trending Card 1 -->
+                <div class="glass reveal-on-scroll"
+                    style="display: grid; grid-template-columns: 350px 1fr; border-radius: 20px; overflow: hidden; height: 240px;">
+                    <img src="assets/trending_1.png" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: center;">
+                        <span
+                            style="color: var(--accent); font-weight: 700; font-size: 0.75rem; text-transform: uppercase;">Remote
+                            Culture</span>
+                        <h4 style="margin: 0.5rem 0; font-size: 1.2rem;">Building Trust in Distributed Teams</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem;">How radical transparency and async
+                            communication are redefining team bonds.</p>
+                        <a href="blog-details.html"
+                            style="color: var(--accent); font-weight: 600; font-size: 0.85rem; text-decoration: none;">Read
+                            article <i class="fas fa-arrow-right" style="font-size: 0.7rem;"></i></a>
+                    </div>
+                </div>
+                <!-- Trending Card 2 -->
+                <div class="glass reveal-on-scroll"
+                    style="display: grid; grid-template-columns: 350px 1fr; border-radius: 20px; overflow: hidden; height: 240px;">
+                    <img src="assets/trending_2.png" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: center;">
+                        <span
+                            style="color: var(--accent); font-weight: 700; font-size: 0.75rem; text-transform: uppercase;">Security</span>
+                        <h4 style="margin: 0.5rem 0; font-size: 1.2rem;">AI-Powered Threat Protection for Meetings</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem;">Using machine learning to identify and
+                            mitigate zoombombing in real-time.</p>
+                        <a href="blog-details.html"
+                            style="color: var(--accent); font-weight: 600; font-size: 0.85rem; text-decoration: none;">Read
+                            article <i class="fas fa-arrow-right" style="font-size: 0.7rem;"></i></a>
+                    </div>
+                </div>
+                <!-- Trending Card 3 -->
+                <div class="glass reveal-on-scroll"
+                    style="display: grid; grid-template-columns: 350px 1fr; border-radius: 20px; overflow: hidden; height: 240px;">
+                    <img src="assets/trending_3.png" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: center;">
+                        <span
+                            style="color: var(--accent); font-weight: 700; font-size: 0.75rem; text-transform: uppercase;">Leadership</span>
+                        <h4 style="margin: 0.5rem 0; font-size: 1.2rem;">The Rise of the Chief Remote Officer</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 1rem;">Why the enterprise of 2026 needs dedicated
+                            leadership for its hybrid workforce.</p>
+                        <a href="blog-details.html"
+                            style="color: var(--accent); font-weight: 600; font-size: 0.85rem; text-decoration: none;">Read
+                            article <i class="fas fa-arrow-right" style="font-size: 0.7rem;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section">
+        <div class="container">
+            <div
+                style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 5rem 2rem; border-radius: 30px; text-align: center; color: white; position: relative; overflow: hidden;">
+                <div
+                    style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(14, 165, 233, 0.1); border-radius: 50%; filter: blur(50px);">
+                </div>
+                <div style="position: relative; z-index: 1;">
+                    <h2 style="color: white !important; font-size: 2.5rem; margin-bottom: 1rem;">Get the latest <span
+                            style="color: var(--accent);">NexusMeet</span> insights.</h2>
+                    <p style="color: rgba(255,255,255,0.7) !important; max-width: 600px; margin: 0 auto 2.5rem;">Weekly
+                        tips and deep dives into the future of work, delivered straight to your inbox.</p>
+                    <form style="display: flex; gap: 1rem; max-width: 500px; margin: 0 auto;">
+                        <input type="email" placeholder="Enter your email"
+                            style="flex: 1; padding: 1rem 1.5rem; border-radius: 50px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: white; outline: none;">
+                        <button type="submit" class="btn btn-primary"
+                            style="padding: 1rem 2rem; border-radius: 50px;">Subscribe</button>
+                    </form>
+                    <p style="font-size: 0.8rem; color: rgba(255,255,255,0.4) !important; margin-top: 1.5rem;">We
+                        respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 1.5rem;">
+                        <i class="fas fa-video"></i>
+                        <span>NexusMeet</span>
+                    </a>
+                    <p style="color: #94A3B8;">Next-generation video communication platform built for the modern
+                        enterprise. Secure, reliable, and incredibly fast.</p>
+                    <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="features.html">Features</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Careers</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <div class="footer-links">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Help Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <div class="footer-links">
+                        <a href="pricing.html">Pricing</a>
+                        <a href="dashboard/index.html">Dashboard</a>
+                        <a href="register.html">Sign Up</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 NexusMeet Inc. All rights reserved.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#">Sitemap</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

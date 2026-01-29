@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusMeet | Next-Gen Video Conferencing</title>
+    <meta name="description"
+        content="Premium video conferencing for teams and enterprises. Experience crystal clear audio and 4K video.">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3536/3536445.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-video"></i>
+                <span>NexusMeet</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active">Home 1</a>
+                <a href="home2.html" class="nav-link">Home 2</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="about.html" class="nav-link">About</a>
+
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+
+            </nav>
+
+            <div class="auth-btns">
+                <button id="theme-toggle" class="btn" style="background:none; color:var(--primary); font-size:1.2rem;">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
+            </div>
+
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">
+                <i class="fas fa-video"></i>
+                <span>NexusMeet</span>
+            </a>
+            <button class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="index.html" class="nav-link active">Home 1</a>
+            <a href="home2.html" class="nav-link">Home 2</a>
+            <a href="features.html" class="nav-link">Features</a>
+            <a href="pricing.html" class="nav-link">Pricing</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+        </nav>
+        <div class="mobile-auth-btns">
+            <a href="login.html" class="btn btn-outline">Login</a>
+            <a href="register.html" class="btn btn-primary">Sign Up</a>
+        </div>
+    </div>
+    <div class="menu-overlay"></div>
+
+    <main style="margin-top: 70px;">
+        <!-- Hero Section -->
+        <section class="section hero"
+            style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); padding: 100px 0; color: white; overflow: hidden; position: relative;">
+            <div class="container"
+                style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: center;">
+                <div class="reveal-on-scroll">
+                    <h1 style="color: white;">Host enterprise meetings with <span style="color: var(--accent);">zero
+                            lag.</span></h1>
+                    <p style="color: #94A3B8; font-size: 1.25rem; margin-bottom: 2.5rem;">NexusMeet brings your team
+                        together with HD video, crystal-clear audio, and advanced collaboration tools built for the
+                        modern workforce.</p>
+                    <div class="hero-btns" style="display: flex; gap: 1.5rem;">
+                        <a href="register.html" class="btn btn-primary"
+                            style="padding: 1rem 2.5rem; font-size: 1.1rem;">Get Started Free</a>
+                        <a href="features.html" class="btn btn-outline" style="border-color: white; color: white;">See
+                            Features</a>
+                    </div>
+                    <div style="margin-top: 3rem; display: flex; gap: 2rem; align-items: center; color: #94A3B8;">
+                        <div>
+                            <span
+                                style="display: block; font-size: 1.5rem; font-weight: 700; color: white;">99.9%</span>
+                            <small>Uptime Rate</small>
+                        </div>
+                        <div style="width: 1px; height: 30px; background: #334155;"></div>
+                        <div>
+                            <span
+                                style="display: block; font-size: 1.5rem; font-weight: 700; color: white;">256-bit</span>
+                            <small>SSL Encryption</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image reveal-on-scroll" style="position: relative;">
+                    <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&q=80&w=1000"
+                        alt="Video Call"
+                        style="border-radius: 20px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);">
+                    <div class="floating-ui glass"
+                        style="position: absolute; bottom: 20px; left: -40px; padding: 1.5rem; border-radius: 12px;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <img src="https://i.pravatar.cc/150?u=1"
+                                style="width: 40px; height: 40px; border-radius: 50%;">
+                            <div>
+                                <p style="margin: 0; font-size: 0.8rem; color: var(--primary);">John Doe joined</p>
+                                <small style="color: var(--secondary);">Active now</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Overview -->
+        <section class="section" id="features">
+            <div class="container">
+                <div style="text-align: center; max-width: 700px; margin: 0 auto 4rem;">
+                    <h2 class="reveal-on-scroll">Everything you need for seamless <span
+                            style="color: var(--accent);">collaboration.</span></h2>
+                    <p class="reveal-on-scroll">Powerful features designed to make your online meetings feel as natural
+                        as face-to-face conversations.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem;">
+                    <div class="glass reveal-on-scroll"
+                        style="padding: 2.5rem; border-radius: 16px; transition: transform 0.3s ease;">
+                        <div
+                            style="width: 60px; height: 60px; background: var(--accent-glow); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>4K Ultra HD Video</h3>
+                        <p>Crystal clear video quality that adapts to your bandwidth, ensuring you never miss a detail.
+                        </p>
+                    </div>
+                    <div class="glass reveal-on-scroll" style="padding: 2.5rem; border-radius: 16px;">
+                        <div
+                            style="width: 60px; height: 60px; background: var(--accent-glow); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3>Smart Screen Sharing</h3>
+                        <p>Share your entire screen or specific windows with low latency and high resolution.</p>
+                    </div>
+                    <div class="glass reveal-on-scroll" style="padding: 2.5rem; border-radius: 16px;">
+                        <div
+                            style="width: 60px; height: 60px; background: var(--accent-glow); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h3>Enterprise Security</h3>
+                        <p>End-to-end encryption and advanced admin controls to keep your meetings private and secure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section" style="background: var(--bg-light);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h2 class="reveal-on-scroll">Trusted by <span style="color: var(--accent);">50,000+</span> teams
+                        worldwide</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div class="glass reveal-on-scroll"
+                        style="padding: 2rem; border-radius: 16px; background: var(--white);">
+                        <div style="display: flex; gap: 0.5rem; color: #fbbf24; margin-bottom: 1rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p style="font-style: italic;">"NexMeet has completely transformed how our remote team
+                            communicates. The video quality is unmatched by any other platform we've tried."</p>
+                        <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid var(--border-color);">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                                JD</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 1rem;">Cloud Architecture Solutions</h4>
+                                <small>Verified Enterprise Client</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat 2 more -->
+                    <div class="glass reveal-on-scroll"
+                        style="padding: 2rem; border-radius: 16px; background: var(--white);">
+                        <div style="display: flex; gap: 0.5rem; color: #fbbf24; margin-bottom: 1rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p style="font-style: italic;">"The recording and transcription features alone saved our
+                            marketing team hours of work every week. Highly recommended for scaling startups."</p>
+                        <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid var(--border-color);">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--secondary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                                SA</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 1rem;">Global Tech Partners Ltd.</h4>
+                                <small>Verified Enterprise Client</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass reveal-on-scroll"
+                        style="padding: 2rem; border-radius: 16px; background: var(--white);">
+                        <div style="display: flex; gap: 0.5rem; color: #fbbf24; margin-bottom: 1rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p style="font-style: italic;">"Reliability is our number one priority, and NexusMeet delivers
+                            every single time. The mobile app is just as smooth as the desktop experience."</p>
+                        <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid var(--border-color);">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                                MT</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 1rem;">Fintech Innovations Inc.</h4>
+                                <small>Verified Enterprise Client</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="#" class="btn btn-outline">View Customer Success Stories</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Metrics (Before/After) -->
+        <section class="section">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div class="reveal-on-scroll">
+                        <h2>Optimize your team's <span style="color: var(--accent);">productivity.</span></h2>
+                        <p>Switching to NexusMeet leads to measurable improvements in team engagement and project
+                            completion rates.</p>
+                        <ul style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
+                            <li style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fas fa-check-circle" style="color: var(--accent);"></i>
+                                <span>35% reduction in meeting downtime</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fas fa-check-circle" style="color: var(--accent);"></i>
+                                <span>50% faster onboarding for new hires</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fas fa-check-circle" style="color: var(--accent);"></i>
+                                <span>80% increase in cross-departmental collaboration</span>
+                            </li>
+                        </ul>
+                        <a href="register.html" class="btn btn-primary">Try for Free</a>
+                    </div>
+                    <div class="reveal-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1000"
+                            alt="Team Collaboration" style="border-radius: 20px; box-shadow: var(--card-shadow);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section cta-section">
+            <div class="container reveal-on-scroll">
+                <h2>Ready to upgrade your meetings?</h2>
+                <p>Join thousands of companies who trust NexusMeet for their daily communications.</p>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="register.html" class="btn btn-primary" style="padding: 1rem 3rem;">Start Free Trial</a>
+                    <a href="contact.html" class="btn btn-outline" style="border-color: white; color: white;">Contact
+                        Sales</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 1.5rem;">
+                        <i class="fas fa-video"></i>
+                        <span>NexusMeet</span>
+                    </a>
+                    <p style="color: #94A3B8;">Next-generation video communication platform built for the modern
+                        enterprise. Secure, reliable, and incredibly fast.</p>
+                    <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="features.html">Features</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Careers</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <div class="footer-links">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Help Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <div class="footer-links">
+                        <a href="pricing.html">Pricing</a>
+                        <a href="dashboard/index.html">Dashboard</a>
+                        <a href="register.html">Sign Up</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 NexusMeet Inc. All rights reserved.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#">Sitemap</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
