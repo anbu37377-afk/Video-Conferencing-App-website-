@@ -7,60 +7,60 @@
     <title>Enterprise Meetings | NexusMeet Home 2</title>
     <meta name="description"
         content="Secure, scalable video conferencing for large teams and organizations. Built for the modern enterprise.">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3536/3536445.png">
+    <link rel="icon" href="assets/favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        :root {
-            --primary: #020617;
-            /* Even deeper for enterprise */
-            --accent-glow: rgba(14, 165, 233, 0.15);
+        body {
+            background-color: var(--bg-light);
+            color: var(--primary);
         }
 
-        body {
+        body[data-theme="dark"] {
+            --accent-glow: rgba(14, 165, 233, 0.15);
             background-color: #020617;
             color: white;
         }
 
-        header {
+        body[data-theme="dark"] header {
             background: rgba(2, 6, 23, 0.8) !important;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
         }
 
-        .nav-link {
+        body[data-theme="dark"] .nav-link {
             color: #94A3B8 !important;
         }
 
-        .nav-link:hover,
-        .nav-link.active {
+        body[data-theme="dark"] .nav-link:hover,
+        body[data-theme="dark"] .nav-link.active {
             color: var(--accent) !important;
         }
 
-        .logo {
+        body[data-theme="dark"] .logo {
             color: white !important;
         }
 
-        h1,
-        h2,
-        h3,
-        h4 {
+        body[data-theme="dark"] h1,
+        body[data-theme="dark"] h2,
+        body[data-theme="dark"] h3,
+        body[data-theme="dark"] h4 {
             color: white !important;
         }
 
-        p {
+        body[data-theme="dark"] p {
             color: #94A3B8 !important;
         }
 
-        .glass {
+        body[data-theme="dark"] .glass {
             background: rgba(15, 23, 42, 0.6) !important;
             border-color: rgba(255, 255, 255, 0.1) !important;
         }
     </style>
 </head>
 
-<body>
+<body data-theme="dark">
 
     <!-- Header -->
     <header>

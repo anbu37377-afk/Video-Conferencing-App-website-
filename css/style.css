@@ -157,6 +157,18 @@ img {
     padding: 64px 0;
 }
 
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+}
+
+.contact-name-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
 @media (max-width: 768px) {
     .section {
         padding: 40px 0;
@@ -168,6 +180,19 @@ img {
 
     h2 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-name-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -426,6 +451,34 @@ header {
     background: rgba(14, 165, 233, 0.1);
 }
 
+/* Blog Learning Center */
+.learning-center-grid {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.learning-center-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: var(--bg-light);
+    border-radius: 12px;
+}
+
+@media (max-width: 991px) {
+    .learning-center-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .learning-center-item {
+        flex-wrap: wrap;
+    }
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -459,6 +512,12 @@ footer {
 [data-theme="dark"] footer span {
     color: #cbd5e1 !important;
     /* Lighter gray for better visibility */
+}
+
+[data-theme="dark"] .footer-links a:hover {
+    color: #cbd5e1 !important;
+    padding-left: 0 !important;
+    transition: none !important;
 }
 
 [data-theme="dark"] footer .logo,
@@ -509,6 +568,22 @@ footer {
 .footer-links a:hover {
     color: var(--accent);
     padding-left: 5px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.footer-socials a {
+    color: #94A3B8;
+    transition: none;
+}
+
+.footer-socials a:hover {
+    color: #94A3B8;
+    transform: none;
 }
 
 .back-to-top {

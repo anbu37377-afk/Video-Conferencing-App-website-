@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | NexusMeet</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3536/3536445.png">
+    <link rel="icon" href="assets/favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -321,21 +321,6 @@
     </main>
 
     <script src="js/dashboard.js"></script>
-    <script>
-        // Specific override for root-level dashboard toggle if necessary
-        document.addEventListener('DOMContentLoaded', () => {
-            const toggle = document.getElementById('mobile-sidebar-toggle');
-            const sidebar = document.querySelector('.sidebar');
-            const overlay = document.querySelector('.sidebar-overlay');
-
-            if (toggle) {
-                toggle.addEventListener('click', () => {
-                    sidebar.classList.toggle('active');
-                    overlay.classList.toggle('active');
-                });
-            }
-        });
-    </script>
 </body>
 
 </html>
