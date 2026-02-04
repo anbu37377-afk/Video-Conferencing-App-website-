@@ -74,8 +74,8 @@
 }
 
 [data-theme="dark"] .btn-outline {
-    border-color: rgba(255, 255, 255, 0.2);
-    color: var(--primary);
+    border-color: var(--accent);
+    color: var(--accent);
 }
 
 [data-theme="dark"] .btn-outline:hover {
@@ -196,6 +196,76 @@ img {
     }
 }
 
+/* Layout Utilities */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 991px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .text-center-mobile {
+        text-align: center !important;
+    }
+
+    .flex-center-mobile {
+        justify-content: center !important;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.trending-card {
+    grid-template-columns: 350px 1fr;
+    height: 240px;
+}
+
+@media (max-width: 991px) {
+    .trending-card {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .trending-card img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
 /* CTA Section - Stays dark for impact */
 .cta-section {
     background-color: #0F172A !important;
@@ -224,6 +294,7 @@ img {
     transition: var(--transition);
     border: none;
     gap: 0.5rem;
+    color: inherit;
 }
 
 .btn-primary {
@@ -514,11 +585,7 @@ footer {
     /* Lighter gray for better visibility */
 }
 
-[data-theme="dark"] .footer-links a:hover {
-    color: #cbd5e1 !important;
-    padding-left: 0 !important;
-    transition: none !important;
-}
+
 
 [data-theme="dark"] footer .logo,
 [data-theme="dark"] footer h4 {
@@ -578,12 +645,12 @@ footer {
 
 .footer-socials a {
     color: #94A3B8;
-    transition: none;
+    transition: var(--transition);
 }
 
 .footer-socials a:hover {
-    color: #94A3B8;
-    transform: none;
+    color: var(--accent);
+    transform: translateY(-2px);
 }
 
 .back-to-top {

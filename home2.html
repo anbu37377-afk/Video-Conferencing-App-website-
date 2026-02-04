@@ -84,12 +84,13 @@
             </nav>
 
             <div class="auth-btns">
-                <button id="theme-toggle" class="btn" style="background:none; color:var(--primary); font-size:1.2rem;">
-                    <i class="fas fa-moon"></i>
-                </button>
                 <a href="login.html" class="btn btn-outline">Login</a>
-                <a href="register.html" class="btn btn-primary">Start Trial</a>
+                <a href="register.html" class="btn btn-primary">Sign Up</a>
             </div>
+
+            <button class="btn theme-toggle" style="background:none; color:var(--primary); font-size:1.2rem;">
+                <i class="fas fa-moon"></i>
+            </button>
 
             <button class="hamburger" style="color: var(--primary);">
                 <i class="fas fa-bars"></i>
@@ -104,9 +105,14 @@
                 <i class="fas fa-video"></i>
                 <span>NexusMeet</span>
             </a>
-            <button class="close-menu">
-                <i class="fas fa-times"></i>
-            </button>
+            <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button class="btn theme-toggle" style="background:none; color:var(--primary); font-size:1.2rem;">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="close-menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
         </div>
         <nav class="mobile-nav">
             <a href="index.html" class="nav-link">Home 1</a>
@@ -132,17 +138,18 @@
             <div
                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 80% 20%, #0c4a6e 0%, #020617 100%); z-index: -1;">
             </div>
-            <div class="container"
-                style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+            <div class="container grid-2 text-center-mobile">
                 <div class="reveal-on-scroll">
                     <span
                         style="display: inline-block; padding: 6px 16px; background: var(--accent-glow); color: var(--accent); border-radius: 50px; font-size: 0.85rem; font-weight: 700; margin-bottom: 2rem; border: 1px solid var(--accent);">FOR
                         GLOBAL ENTERPRISE</span>
-                    <h1 style="font-size: 4.5rem; line-height: 1.1;">Scale your <span style="color: var(--accent);">team
-                            meetings</span> without limits.</h1>
-                    <p style="font-size: 1.25rem; margin: 2rem 0 3rem;">Deliver a unified communication experience with
+                    <h1 style="font-size: 4.5rem; line-height: 1.1; color: white;">Scale your <span
+                            style="color: var(--accent);">team
+                            meetings</span> <span style="color: white;">without limits.</span></h1>
+                    <p style="font-size: 1.25rem; margin: 2rem 0 3rem; color: #94A3B8;">Deliver a unified communication
+                        experience with
                         bank-grade security and 99.99% uptime for organizations of any size.</p>
-                    <div style="display: flex; gap: 1.5rem;">
+                    <div class="flex-center-mobile" style="display: flex; gap: 1.5rem;">
                         <a href="contact.html" class="btn btn-primary" style="padding: 1.25rem 3rem;">Book Demo</a>
                         <a href="#infra" class="btn btn-outline" style="color: white; border-color: white;">View
                             Infrastructure</a>
@@ -152,7 +159,7 @@
                     <div
                         style="background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%); border: 1px solid rgba(255,255,255,0.1); border-radius: 30px; padding: 20px; box-shadow: 0 40px 100px rgba(0,0,0,0.5);">
                         <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1200"
-                            alt="Tech Office" style="border-radius: 20px; width: 100%;">
+                            alt="Tech Office" class="img-fluid" style="border-radius: 20px;">
                     </div>
                     <!-- Floating Stat -->
                     <div class="glass"
@@ -173,29 +180,33 @@
                     <p>Our global edge network ensures that your meetings stay connected with sub-50ms latency,
                         regardless of where your team members are located.</p>
                 </div>
-                <div style="position: relative;">
+                <div class="infra-container"
+                    style="position: relative; border-radius: 24px; overflow: hidden; background: #0f172a; min-height: 500px; display: flex; align-items: center;">
                     <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200"
                         alt="Global Network"
-                        style="border-radius: 24px; width: 100%; height: 500px; object-fit: cover; opacity: 0.6; filter: grayscale(1) brightness(0.8);">
-                    <div
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); align-items: center; gap: 2rem; padding: 2rem;">
-                        <div class="glass reveal-on-scroll" style="padding: 2rem;">
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; filter: grayscale(1) brightness(0.6); z-index: 1;">
+                    <div class="reveal-on-scroll"
+                        style="position: relative; z-index: 2; width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; padding: 4rem 2rem;">
+                        <div class="glass" style="padding: 2.5rem; border-radius: 20px;">
                             <i class="fas fa-server"
-                                style="color: var(--accent); font-size: 2rem; margin-bottom: 1.5rem;"></i>
-                            <h3>25+ Global Regions</h3>
-                            <p>Edge servers in Tokyo, London, NYC, and more for local peering.</p>
+                                style="color: var(--accent); font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                            <h3 style="color: white !important;">25+ Global Regions</h3>
+                            <p style="color: #cbd5e1; margin-bottom: 0;">Edge servers in Tokyo, London, NYC, and more
+                                for local peering.</p>
                         </div>
-                        <div class="glass reveal-on-scroll" style="padding: 2rem;">
+                        <div class="glass" style="padding: 2.5rem; border-radius: 20px;">
                             <i class="fas fa-shield-virus"
-                                style="color: var(--accent); font-size: 2rem; margin-bottom: 1.5rem;"></i>
-                            <h3>DDoS Protection</h3>
-                            <p>Military-grade mitigation against all forms of network attacks.</p>
+                                style="color: var(--accent); font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                            <h3 style="color: white !important;">DDoS Protection</h3>
+                            <p style="color: #cbd5e1; margin-bottom: 0;">Military-grade mitigation against all forms of
+                                network attacks.</p>
                         </div>
-                        <div class="glass reveal-on-scroll" style="padding: 2rem;">
+                        <div class="glass" style="padding: 2.5rem; border-radius: 20px;">
                             <i class="fas fa-bolt"
-                                style="color: var(--accent); font-size: 2rem; margin-bottom: 1.5rem;"></i>
-                            <h3>99.99% Uptime</h3>
-                            <p>Redundant infrastructure with automatic failover protocols.</p>
+                                style="color: var(--accent); font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
+                            <h3 style="color: white !important;">99.99% Uptime</h3>
+                            <p style="color: #cbd5e1; margin-bottom: 0;">Redundant infrastructure with automatic
+                                failover protocols.</p>
                         </div>
                     </div>
                 </div>
@@ -251,11 +262,7 @@
                         <a href="features.html" class="btn btn-primary">View All
                             Integrations</a>
                     </div>
-                    <div class="reveal-on-scroll" style="width: 100%; max-width: 1000px;">
-                        <img src="https://images.unsplash.com/photo-1551288049-bbbda546697a?auto=format&fit=crop&q=80&w=1200"
-                            alt="Communication Dashboard"
-                            style="border-radius: 24px; box-shadow: 0 40px 100px rgba(0,0,0,0.5); width: 100%;">
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -263,10 +270,16 @@
         <!-- Section 4: Enterprise Controls -->
         <section class="section" style="background: #0ea5e9; color: white;">
             <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="grid-2 text-center-mobile">
                     <div class="reveal-on-scroll">
-                        <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&q=80&w=1200"
-                            alt="Director Office" style="border-radius: 24px; box-shadow: 0 30px 60px rgba(0,0,0,0.3);">
+                        <div
+                            style="background: white; padding: 10px 20px; border-radius: 12px 12px 0 0; display: flex; align-items: center; gap: 1rem; color: #020617; font-weight: 600; font-size: 0.9rem;">
+                            <i class="fas fa-chart-line" style="color: var(--accent);"></i>
+                            <span>Communication Dashboard</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1200"
+                            alt="Admin Dashboard" class="img-fluid"
+                            style="border-radius: 0 0 24px 24px; box-shadow: 0 30px 60px rgba(0,0,0,0.3);">
                     </div>
                     <div class="reveal-on-scroll">
                         <h2 style="color: white !important; font-size: 2.75rem;">Full Admin <span
@@ -274,7 +287,7 @@
                         <p style="color: rgba(255,255,255,0.8) !important; margin: 2rem 0;">Get deep insights into
                             meeting metrics, participant engagement, and network performance across your entire
                             organization with our centralized dashboard.</p>
-                        <ul style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <ul style="display: flex; flex-direction: column; gap: 1.5rem; text-align: left;">
                             <li style="display: flex; align-items: center; gap: 1rem;">
                                 <i class="fas fa-check-circle" style="color: #020617;"></i>
                                 <span>Audit logs and compliance reporting</span>
@@ -299,7 +312,8 @@
                 <h2 style="font-size: 3.5rem;">Ready to upgrade your enterprise?</h2>
                 <p style="font-size: 1.25rem; margin-bottom: 3.5rem;">Join the global leaders who trust NexusMeet for
                     their mission-critical communications.</p>
-                <div style="display: flex; gap: 1.5rem; justify-content: center;">
+                <div class="flex-center-mobile"
+                    style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
                     <a href="contact.html" class="btn btn-primary" style="padding: 1.25rem 3.5rem;">Talk to Sales</a>
                     <a href="register.html" class="btn btn-outline" style="color: white; border-color: white;">Pricing
                         Plans</a>

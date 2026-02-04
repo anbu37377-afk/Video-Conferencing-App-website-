@@ -29,12 +29,12 @@
 
             </nav>
             <div class="auth-btns">
-                <button id="theme-toggle" class="btn" style="background:none; color:var(--primary); font-size:1.2rem;">
-                    <i class="fas fa-moon"></i>
-                </button>
                 <a href="login.html" class="btn btn-outline">Login</a>
                 <a href="register.html" class="btn btn-primary">Sign Up</a>
             </div>
+            <button class="btn theme-toggle" style="background:none; color:var(--primary); font-size:1.2rem;">
+                <i class="fas fa-moon"></i>
+            </button>
             <button class="hamburger"><i class="fas fa-bars"></i></button>
         </div>
     </header>
@@ -46,9 +46,14 @@
                 <i class="fas fa-video"></i>
                 <span>NexusMeet</span>
             </a>
-            <button class="close-menu">
-                <i class="fas fa-times"></i>
-            </button>
+            <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button class="btn theme-toggle" style="background:none; color:var(--primary); font-size:1.2rem;">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="close-menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
         </div>
         <nav class="mobile-nav">
             <a href="index.html" class="nav-link">Home 1</a>
@@ -80,7 +85,7 @@
         <!-- Feature Grid Detailed -->
         <section class="section">
             <div class="container">
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div class="grid-3">
                     <div class="glass reveal-on-scroll" style="padding: 2.5rem; border-radius: 20px;">
                         <i class="fas fa-microphone-lines"
                             style="color: var(--accent); font-size: 2rem; margin-bottom: 1.5rem;"></i>
@@ -116,21 +121,25 @@
 
         <!-- Interactive Demo Style Section -->
         <section class="section" style="background: var(--bg-light);">
-            <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-                    <div class="reveal-on-scroll">
-                        <h2>Built-in Whiteboard & <span style="color: var(--accent);">Live Polls.</span></h2>
-                        <p>Engagement is key to effective meetings. Use our interactive whiteboard to sketch ideas
-                            or
-                            run instant polls to gather team feedback without leaving the call.</p>
-                        <div style="margin-top: 2rem;">
-                            <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=800"
-                                alt="Whiteboard" style="border-radius: 12px; width: 100%;">
-                        </div>
+            <div class="container text-center-mobile" style="text-align: center;">
+                <div class="reveal-on-scroll" style="max-width: 800px; margin: 0 auto 4rem;">
+                    <h2>Built-in Whiteboard & <span style="color: var(--accent);">Live Polls.</span></h2>
+                    <p style="font-size: 1.15rem;">Engagement is key to effective meetings. Use our interactive
+                        whiteboard to sketch ideas
+                        or run instant polls to gather team feedback without leaving the call.</p>
+                </div>
+                <div class="grid-2" style="align-items: start;">
+                    <div class="reveal-on-scroll"
+                        style="background: white; padding: 20px; border-radius: 24px; box-shadow: var(--card-shadow);">
+                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=800"
+                            alt="Whiteboard" class="img-fluid" style="border-radius: 12px;">
+                        <p style="margin-top: 1.5rem; font-weight: 600; color: var(--primary);">Real-time Whiteboard</p>
                     </div>
-                    <div class="reveal-on-scroll">
+                    <div class="reveal-on-scroll"
+                        style="background: white; padding: 20px; border-radius: 24px; box-shadow: var(--card-shadow);">
                         <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
-                            alt="Collaboration" style="border-radius: 20px; box-shadow: var(--card-shadow);">
+                            alt="Collaboration" class="img-fluid" style="border-radius: 20px;">
+                        <p style="margin-top: 1.5rem; font-weight: 600; color: var(--primary);">Live Team Polls</p>
                     </div>
                 </div>
             </div>
@@ -139,10 +148,10 @@
         <!-- New Section 1: Security -->
         <section class="section">
             <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="grid-2">
                     <div class="reveal-on-scroll">
-                        <img src="assets/security.png" alt="Enterprise Security"
-                            style="border-radius: 20px; box-shadow: var(--card-shadow); width: 100%;">
+                        <img src="assets/security.png" alt="Enterprise Security" class="img-fluid"
+                            style="border-radius: 20px; box-shadow: var(--card-shadow);">
                     </div>
                     <div class="reveal-on-scroll">
                         <h2>Enterprise-Grade <span style="color: var(--accent);">Security.</span></h2>
@@ -170,7 +179,7 @@
         <!-- New Section 2: Multi-Platform -->
         <section class="section" style="background: var(--bg-light);">
             <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="grid-2">
                     <div class="reveal-on-scroll">
                         <h2>Connect from <span style="color: var(--accent);">Anywhere.</span></h2>
                         <p>Seamlessly transition between your laptop, tablet, and smartphone. NexusMeet is optimized
@@ -195,8 +204,8 @@
                         </div>
                     </div>
                     <div class="reveal-on-scroll">
-                        <img src="assets/multi-platform.png" alt="Multi-Platform Access"
-                            style="border-radius: 20px; box-shadow: var(--card-shadow); width: 100%;">
+                        <img src="assets/multi-platform.png" alt="Multi-Platform Access" class="img-fluid"
+                            style="border-radius: 20px; box-shadow: var(--card-shadow);">
                     </div>
                 </div>
             </div>
@@ -205,10 +214,10 @@
         <!-- New Section 3: Analytics -->
         <section class="section">
             <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="grid-2">
                     <div class="reveal-on-scroll">
-                        <img src="assets/analytics.png" alt="Advanced Analytics"
-                            style="border-radius: 20px; box-shadow: var(--card-shadow); width: 100%;">
+                        <img src="assets/analytics.png" alt="Advanced Analytics" class="img-fluid"
+                            style="border-radius: 20px; box-shadow: var(--card-shadow);">
                     </div>
                     <div class="reveal-on-scroll">
                         <h2>Deep <span style="color: var(--accent);">Meeting Insights.</span></h2>
@@ -225,66 +234,66 @@
         </section>
     </main>
 
-    < <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-col">
-                        <a href="index.html" class="logo" style="color: white; margin-bottom: 1.5rem;">
-                            <i class="fas fa-video"></i>
-                            <span>NexusMeet</span>
-                        </a>
-                        <p style="color: #94A3B8;">Next-generation video communication platform built for the modern
-                            enterprise. Secure, reliable, and incredibly fast.</p>
-                        <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
-                            <a href="#" style="color: #94A3B8;"><i class="fab fa-twitter"></i></a>
-                            <a href="#" style="color: #94A3B8;"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" style="color: #94A3B8;"><i class="fab fa-facebook"></i></a>
-                            <a href="#" style="color: #94A3B8;"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Company</h4>
-                        <div class="footer-links">
-                            <a href="about.html">About Us</a>
-                            <a href="features.html">Features</a>
-                            <a href="blog.html">Blog</a>
-                            <a href="contact.html">Careers</a>
-                        </div>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Support</h4>
-                        <div class="footer-links">
-                            <a href="contact.html">Contact Us</a>
-                            <a href="#">Help Center</a>
-                            <a href="#">Privacy Policy</a>
-                            <a href="#">Terms of Service</a>
-                        </div>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Product</h4>
-                        <div class="footer-links">
-                            <a href="pricing.html">Pricing</a>
-                            <a href="dashboard/index.html">Dashboard</a>
-                            <a href="register.html">Sign Up</a>
-                            <a href="login.html">Login</a>
-                        </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 1.5rem;">
+                        <i class="fas fa-video"></i>
+                        <span>NexusMeet</span>
+                    </a>
+                    <p style="color: #94A3B8;">Next-generation video communication platform built for the modern
+                        enterprise. Secure, reliable, and incredibly fast.</p>
+                    <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: #94A3B8;"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                    <p>© 2026 NexusMeet Inc. All rights reserved.</p>
-                    <div style="display: flex; gap: 2rem;">
-                        <a href="#">Sitemap</a>
-                        <a href="#">Cookies</a>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="features.html">Features</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Careers</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <div class="footer-links">
+                        <a href="contact.html">Contact Us</a>
+                        <a href="#">Help Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <div class="footer-links">
+                        <a href="pricing.html">Pricing</a>
+                        <a href="dashboard/index.html">Dashboard</a>
+                        <a href="register.html">Sign Up</a>
+                        <a href="login.html">Login</a>
                     </div>
                 </div>
             </div>
-        </footer>
-
-        <div class="back-to-top">
-            <i class="fas fa-chevron-up"></i>
+            <div class="footer-bottom">
+                <p>© 2026 NexusMeet Inc. All rights reserved.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#">Sitemap</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
         </div>
-        <script src="js/main.js"></script>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

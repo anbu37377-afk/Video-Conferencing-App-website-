@@ -40,12 +40,13 @@
             </nav>
 
             <div class="auth-btns">
-                <button id="theme-toggle" class="btn" style="background:none; color:var(--primary); font-size:1.2rem;">
-                    <i class="fas fa-moon"></i>
-                </button>
                 <a href="login.html" class="btn btn-outline">Login</a>
                 <a href="register.html" class="btn btn-primary">Sign Up</a>
             </div>
+
+            <button class="btn theme-toggle" style="background:none; color:var(--primary); font-size:1.2rem;">
+                <i class="fas fa-moon"></i>
+            </button>
 
             <button class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -60,9 +61,14 @@
                 <i class="fas fa-video"></i>
                 <span>NexusMeet</span>
             </a>
-            <button class="close-menu">
-                <i class="fas fa-times"></i>
-            </button>
+            <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button class="btn theme-toggle" style="background:none; color:var(--primary); font-size:1.2rem;">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="close-menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
         </div>
         <nav class="mobile-nav">
             <a href="index.html" class="nav-link active">Home 1</a>
@@ -85,8 +91,7 @@
         <!-- Hero Section -->
         <section class="section hero"
             style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); padding: 100px 0; color: white; overflow: hidden; position: relative;">
-            <div class="container"
-                style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: center;">
+            <div class="container grid-2">
                 <div class="reveal-on-scroll">
                     <h1 style="color: white;">Host enterprise meetings with <span style="color: var(--accent);">zero
                             lag.</span></h1>
@@ -115,7 +120,7 @@
                 </div>
                 <div class="hero-image reveal-on-scroll" style="position: relative;">
                     <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&q=80&w=1000"
-                        alt="Video Call"
+                        alt="Video Call" class="img-fluid"
                         style="border-radius: 20px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);">
                     <div class="floating-ui glass"
                         style="position: absolute; bottom: 20px; left: -40px; padding: 1.5rem; border-radius: 12px;">
@@ -193,7 +198,7 @@
                         <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid var(--border-color);">
                         <div style="display: flex; align-items: center; gap: 1rem;">
                             <div
-                                style="width: 40px; height: 40px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                                style="width: 40px; height: 40px; background: #6366F1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">
                                 JD</div>
                             <div>
                                 <h4 style="margin: 0; font-size: 1rem;">Cloud Architecture Solutions</h4>
@@ -213,7 +218,7 @@
                         <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid var(--border-color);">
                         <div style="display: flex; align-items: center; gap: 1rem;">
                             <div
-                                style="width: 40px; height: 40px; background: var(--secondary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                                style="width: 40px; height: 40px; background: #8B5CF6; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">
                                 SA</div>
                             <div>
                                 <h4 style="margin: 0; font-size: 1rem;">Global Tech Partners Ltd.</h4>
@@ -250,7 +255,7 @@
         <!-- Product Metrics (Before/After) -->
         <section class="section">
             <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="grid-2">
                     <div class="reveal-on-scroll">
                         <h2>Optimize your team's <span style="color: var(--accent);">productivity.</span></h2>
                         <p>Switching to NexusMeet leads to measurable improvements in team engagement and project
@@ -273,7 +278,8 @@
                     </div>
                     <div class="reveal-on-scroll">
                         <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1000"
-                            alt="Team Collaboration" style="border-radius: 20px; box-shadow: var(--card-shadow);">
+                            alt="Team Collaboration" class="img-fluid"
+                            style="border-radius: 20px; box-shadow: var(--card-shadow);">
                     </div>
                 </div>
             </div>

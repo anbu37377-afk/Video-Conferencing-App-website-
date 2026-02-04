@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.className = 'sidebar-overlay';
         body.appendChild(overlay);
     }
-    const closeSidebar = document.getElementById('close-sidebar');
+    // Close button and overlay
+    const closeSidebarBtn = document.querySelector('#close-sidebar');
 
     function toggleSidebar(isOpen) {
         if (isOpen) {
@@ -25,11 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (toggle) {
-        toggle.addEventListener('click', () => toggleSidebar(true));
+        toggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleSidebar(true);
+        });
     }
 
-    if (closeSidebar) {
-        closeSidebar.addEventListener('click', () => toggleSidebar(false));
+    if (closeSidebarBtn) {
+        closeSidebarBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleSidebar(false);
+        });
     }
 
     if (overlay) {
@@ -84,27 +91,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Theme Toggle
-    const themeToggle = document.getElementById('theme-toggle');
+    const themeToggles = document.querySelectorAll('.theme-toggle');
+    const themeIcons = document.querySelectorAll('.theme-toggle i');
+
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         body.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme);
+        updateThemeIcons(savedTheme);
     }
 
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
+    themeToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
             const currentTheme = body.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             body.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
+            updateThemeIcons(newTheme);
         });
-    }
+    });
 
-    function updateThemeIcon(theme) {
-        const icon = themeToggle?.querySelector('i');
-        if (icon) {
+    function updateThemeIcons(theme) {
+        themeIcons.forEach(icon => {
             icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-        }
+        });
     }
 });

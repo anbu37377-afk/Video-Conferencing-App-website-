@@ -29,12 +29,12 @@
 
             </nav>
             <div class="auth-btns">
-                <button id="theme-toggle" class="btn" style="background:none; color:var(--primary); font-size:1.2rem;">
-                    <i class="fas fa-moon"></i>
-                </button>
                 <a href="login.html" class="btn btn-outline">Login</a>
                 <a href="register.html" class="btn btn-primary">Sign Up</a>
             </div>
+            <button class="btn theme-toggle" style="background:none; color:var(--primary); font-size:1.2rem;">
+                <i class="fas fa-moon"></i>
+            </button>
             <button class="hamburger"><i class="fas fa-bars"></i></button>
         </div>
     </header>
@@ -46,9 +46,14 @@
                 <i class="fas fa-video"></i>
                 <span>NexusMeet</span>
             </a>
-            <button class="close-menu">
-                <i class="fas fa-times"></i>
-            </button>
+            <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button class="btn theme-toggle" style="background:none; color:var(--primary); font-size:1.2rem;">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="close-menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
         </div>
         <nav class="mobile-nav">
             <a href="index.html" class="nav-link">Home 1</a>
@@ -241,34 +246,32 @@
                 </div>
             </div>
         </section>
-        <!-- Success Stories Section -->
         <section class="section">
-            <div class="container">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-                    <div class="reveal-on-scroll">
-                        <span
-                            style="color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">Customer
-                            Success</span>
-                        <h2 style="margin: 1rem 0;">How <span style="color: var(--accent);">CloudTech</span> Scaled
-                            Their Global Operations.</h2>
-                        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--secondary);">"NexusMeet didn't just
-                            give us a video tool; they gave us a virtual headquarters. We've seen a 40% increase in
-                            cross-departmental collaboration since switching."</p>
-                        <div style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem;">
-                            <img src="https://i.pravatar.cc/150?u=ceo"
-                                style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid var(--accent);">
-                            <div>
-                                <h4 style="margin: 0;">Robert Chen</h4>
-                                <p style="margin: 0; font-size: 0.9rem; color: var(--secondary);">CEO, CloudTech Systems
-                                </p>
-                            </div>
+            <div class="container grid-2">
+                <div class="reveal-on-scroll">
+                    <span
+                        style="color: var(--accent); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">Customer
+                        Success</span>
+                    <h2 style="margin: 1rem 0;">How <span style="color: var(--accent);">CloudTech</span> Scaled
+                        Their Global Operations.</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--secondary);">"NexusMeet didn't just
+                        give us a video tool; they gave us a virtual headquarters. We've seen a 40% increase in
+                        cross-departmental collaboration since switching."</p>
+                    <div style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem;">
+                        <img src="https://i.pravatar.cc/150?u=ceo"
+                            style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid var(--accent);">
+                        <div>
+                            <h4 style="margin: 0;">Robert Chen</h4>
+                            <p style="margin: 0; font-size: 0.9rem; color: var(--secondary);">CEO, CloudTech Systems
+                            </p>
                         </div>
                     </div>
-                    <div class="reveal-on-scroll">
-                        <img src="assets/success_story.png" alt="Success Story Team"
-                            style="border-radius: 30px; box-shadow: var(--card-shadow); width: 100%;">
-                    </div>
                 </div>
+                <div class="reveal-on-scroll">
+                    <img src="assets/success_story.png" alt="Success Story Team" class="img-fluid"
+                        style="border-radius: 30px; box-shadow: var(--card-shadow);">
+                </div>
+            </div>
             </div>
         </section>
 
@@ -378,8 +381,8 @@
             </div>
             <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 1100px; margin: 0 auto;">
                 <!-- Trending Card 1 -->
-                <div class="glass reveal-on-scroll"
-                    style="display: grid; grid-template-columns: 350px 1fr; border-radius: 20px; overflow: hidden; height: 240px;">
+                <div class="glass reveal-on-scroll trending-card"
+                    style="display: grid; border-radius: 20px; overflow: hidden;">
                     <img src="assets/trending_1.png" style="width: 100%; height: 100%; object-fit: cover;">
                     <div style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: center;">
                         <span
@@ -394,8 +397,8 @@
                     </div>
                 </div>
                 <!-- Trending Card 2 -->
-                <div class="glass reveal-on-scroll"
-                    style="display: grid; grid-template-columns: 350px 1fr; border-radius: 20px; overflow: hidden; height: 240px;">
+                <div class="glass reveal-on-scroll trending-card"
+                    style="display: grid; border-radius: 20px; overflow: hidden;">
                     <img src="assets/trending_2.png" style="width: 100%; height: 100%; object-fit: cover;">
                     <div style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: center;">
                         <span
@@ -409,8 +412,8 @@
                     </div>
                 </div>
                 <!-- Trending Card 3 -->
-                <div class="glass reveal-on-scroll"
-                    style="display: grid; grid-template-columns: 350px 1fr; border-radius: 20px; overflow: hidden; height: 240px;">
+                <div class="glass reveal-on-scroll trending-card"
+                    style="display: grid; border-radius: 20px; overflow: hidden;">
                     <img src="assets/trending_3.png" style="width: 100%; height: 100%; object-fit: cover;">
                     <div style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: center;">
                         <span
@@ -440,7 +443,7 @@
                             style="color: var(--accent);">NexusMeet</span> insights.</h2>
                     <p style="color: rgba(255,255,255,0.7) !important; max-width: 600px; margin: 0 auto 2.5rem;">Weekly
                         tips and deep dives into the future of work, delivered straight to your inbox.</p>
-                    <form style="display: flex; gap: 1rem; max-width: 500px; margin: 0 auto;">
+                    <form class="newsletter-form" style="display: flex; gap: 1rem; max-width: 500px; margin: 0 auto;">
                         <input type="email" placeholder="Enter your email"
                             style="flex: 1; padding: 1rem 1.5rem; border-radius: 50px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: white; outline: none;">
                         <button type="submit" class="btn btn-primary"
