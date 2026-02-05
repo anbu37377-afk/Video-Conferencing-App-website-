@@ -183,7 +183,7 @@ img {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .contact-layout {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -215,18 +215,10 @@ img {
     height: auto;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .grid-2 {
         grid-template-columns: 1fr;
         gap: 2.5rem;
-    }
-
-    .text-center-mobile {
-        text-align: center !important;
-    }
-
-    .flex-center-mobile {
-        justify-content: center !important;
     }
 
     .grid-3 {
@@ -242,6 +234,27 @@ img {
     }
 }
 
+@media (max-width: 768px) {
+    .text-center-mobile {
+        text-align: center !important;
+    }
+
+    .flex-center-mobile {
+        justify-content: center !important;
+    }
+
+    .blog-card-footer {
+        justify-content: center !important;
+    }
+}
+
+.blog-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 @media (max-width: 640px) {
     .grid-3 {
         grid-template-columns: 1fr;
@@ -253,7 +266,7 @@ img {
     height: 240px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .trending-card {
         grid-template-columns: 1fr;
         height: auto;
@@ -402,7 +415,7 @@ header {
     color: var(--primary);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .nav-links {
         display: none;
     }
@@ -413,6 +426,11 @@ header {
 
     .hamburger {
         display: block;
+    }
+
+    .nav-container .theme-toggle {
+        margin-left: auto;
+        margin-right: 1rem;
     }
 }
 
@@ -539,7 +557,7 @@ header {
     border-radius: 12px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .learning-center-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -675,4 +693,39 @@ footer {
 .back-to-top.visible {
     opacity: 1;
     visibility: visible;
+}
+
+/* CTA Section Box on Pricing Page */
+.cta-section-box {
+    padding: 5rem;
+}
+
+.cta-section-box h2 {
+    font-size: 2.5rem;
+}
+
+.cta-section-box .btn {
+    padding: 1.25rem 3.5rem;
+}
+
+@media (max-width: 768px) {
+    .cta-section-box {
+        padding: 3.5rem 1.5rem;
+    }
+
+    .cta-section-box h2 {
+        font-size: 2rem !important;
+    }
+
+    .cta-section-box p {
+        font-size: 1rem !important;
+        padding: 0 10px;
+    }
+
+    .cta-section-box .btn {
+        padding: 1rem 2rem;
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
 }
