@@ -57,6 +57,42 @@
             background: rgba(15, 23, 42, 0.6) !important;
             border-color: rgba(255, 255, 255, 0.1) !important;
         }
+
+        /* Light mode styling for CTA pricing button */
+        body:not([data-theme="dark"]) .cta-pricing-btn {
+            color: var(--primary) !important;
+            border-color: var(--primary) !important;
+        }
+
+        body:not([data-theme="dark"]) .cta-pricing-btn:hover {
+            background: var(--primary) !important;
+            color: white !important;
+        }
+
+        /* Logic for Infra Cards Tezt Visibility */
+        .infra-text-title {
+            color: var(--primary);
+            /* Dark text for light mode (default) */
+        }
+
+        .infra-text-desc {
+            color: #334155;
+            /* Darker text for light mode visibility */
+        }
+
+        @media (max-width: 768px) {
+            .infra-card {
+                text-align: center;
+            }
+        }
+
+        body[data-theme="dark"] .infra-text-title {
+            color: white !important;
+        }
+
+        body[data-theme="dark"] .infra-text-desc {
+            color: #cbd5e1 !important;
+        }
     </style>
 </head>
 
@@ -187,25 +223,27 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; filter: grayscale(1) brightness(0.6); z-index: 1;">
                     <div class="reveal-on-scroll"
                         style="position: relative; z-index: 2; width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; padding: 4rem 2rem;">
-                        <div class="glass" style="padding: 2.5rem; border-radius: 20px;">
+                        <div class="glass infra-card" style="padding: 2.5rem; border-radius: 20px;">
                             <i class="fas fa-server"
                                 style="color: var(--accent); font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
-                            <h3 style="color: white !important;">25+ Global Regions</h3>
-                            <p style="color: #cbd5e1; margin-bottom: 0;">Edge servers in Tokyo, London, NYC, and more
+                            <h3 class="infra-text-title">25+ Global Regions</h3>
+                            <p class="infra-text-desc" style="margin-bottom: 0;">Edge servers in Tokyo, London, NYC, and
+                                more
                                 for local peering.</p>
                         </div>
-                        <div class="glass" style="padding: 2.5rem; border-radius: 20px;">
+                        <div class="glass infra-card" style="padding: 2.5rem; border-radius: 20px;">
                             <i class="fas fa-shield-virus"
                                 style="color: var(--accent); font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
-                            <h3 style="color: white !important;">DDoS Protection</h3>
-                            <p style="color: #cbd5e1; margin-bottom: 0;">Military-grade mitigation against all forms of
+                            <h3 class="infra-text-title">DDoS Protection</h3>
+                            <p class="infra-text-desc" style="margin-bottom: 0;">Military-grade mitigation against all
+                                forms of
                                 network attacks.</p>
                         </div>
-                        <div class="glass" style="padding: 2.5rem; border-radius: 20px;">
+                        <div class="glass infra-card" style="padding: 2.5rem; border-radius: 20px;">
                             <i class="fas fa-bolt"
                                 style="color: var(--accent); font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
-                            <h3 style="color: white !important;">99.99% Uptime</h3>
-                            <p style="color: #cbd5e1; margin-bottom: 0;">Redundant infrastructure with automatic
+                            <h3 class="infra-text-title">99.99% Uptime</h3>
+                            <p class="infra-text-desc" style="margin-bottom: 0;">Redundant infrastructure with automatic
                                 failover protocols.</p>
                         </div>
                     </div>
@@ -315,7 +353,8 @@
                 <div class="flex-center-mobile"
                     style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
                     <a href="contact.html" class="btn btn-primary" style="padding: 1.25rem 3.5rem;">Talk to Sales</a>
-                    <a href="register.html" class="btn btn-outline" style="color: white; border-color: white;">Pricing
+                    <a href="register.html" class="btn btn-outline cta-pricing-btn"
+                        style="color: white; border-color: white;">Pricing
                         Plans</a>
                 </div>
             </div>
