@@ -93,6 +93,56 @@
         body[data-theme="dark"] .infra-text-desc {
             color: #cbd5e1 !important;
         }
+
+        /* Responsive Improvements for Home 2 */
+        .enterprise-h1 {
+            font-size: 4.5rem !important;
+            line-height: 1.1;
+        }
+
+        .enterprise-h2 {
+            font-size: 3.5rem !important;
+        }
+
+        .section-title-large {
+            font-size: 3rem !important;
+        }
+
+        @media (max-width: 1024px) {
+            .enterprise-h1 {
+                font-size: 3.5rem !important;
+            }
+
+            .enterprise-h2,
+            .section-title-large {
+                font-size: 2.75rem !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .enterprise-h1 {
+                font-size: 2.5rem !important;
+            }
+
+            .enterprise-h2,
+            .section-title-large {
+                font-size: 2.1rem !important;
+            }
+
+            .hero-btns-container {
+                justify-content: center !important;
+            }
+
+            .floating-stat {
+                right: 0 !important;
+                top: -20px !important;
+                padding: 1rem !important;
+            }
+
+            .infra-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
     </style>
 </head>
 
@@ -179,13 +229,12 @@
                     <span
                         style="display: inline-block; padding: 6px 16px; background: var(--accent-glow); color: var(--accent); border-radius: 50px; font-size: 0.85rem; font-weight: 700; margin-bottom: 2rem; border: 1px solid var(--accent);">FOR
                         GLOBAL ENTERPRISE</span>
-                    <h1 style="font-size: 4.5rem; line-height: 1.1; color: white;">Scale your <span
-                            style="color: var(--accent);">team
+                    <h1 class="enterprise-h1" style="color: white;">Scale your <span style="color: var(--accent);">team
                             meetings</span> <span style="color: white;">without limits.</span></h1>
                     <p style="font-size: 1.25rem; margin: 2rem 0 3rem; color: #94A3B8;">Deliver a unified communication
                         experience with
                         bank-grade security and 99.99% uptime for organizations of any size.</p>
-                    <div class="flex-center-mobile" style="display: flex; gap: 1.5rem; justify-content: center;">
+                    <div class="flex-center-mobile hero-btns-container" style="display: flex; gap: 1.5rem;">
                         <a href="contact.html" class="btn btn-primary" style="padding: 1.25rem 3rem;">Book Demo</a>
                         <a href="#infra" class="btn btn-outline" style="color: white; border-color: white;">View
                             Infrastructure</a>
@@ -198,8 +247,8 @@
                             alt="Tech Office" class="img-fluid" style="border-radius: 20px;">
                     </div>
                     <!-- Floating Stat -->
-                    <div class="glass"
-                        style="position: absolute; top: -30px; right: -20px; padding: 1.5rem; border-radius: 16px;">
+                    <div class="glass floating-stat"
+                        style="position: absolute; top: -30px; right: -20px; padding: 1.5rem; border-radius: 16px; z-index: 10;">
                         <h3 style="margin: 0; color: var(--accent) !important;">10,000+</h3>
                         <p style="margin: 0; font-size: 0.8rem;">Concurrent Participants</p>
                     </div>
@@ -210,8 +259,8 @@
         <!-- Section 2: Global Infrastructure -->
         <section id="infra" class="section" style="background: rgba(255,255,255,0.02);">
             <div class="container">
-                <div style="text-align: center; max-width: 800px; margin: 0 auto 5rem;">
-                    <h2 style="font-size: 3rem;">Low Latency, <span style="color: var(--accent);">High
+                <div style="text-align: center; max-width: 800px; margin: 0 auto 4rem;">
+                    <h2 class="section-title-large">Low Latency, <span style="color: var(--accent);">High
                             Reliability</span></h2>
                     <p>Our global edge network ensures that your meetings stay connected with sub-50ms latency,
                         regardless of where your team members are located.</p>
@@ -221,8 +270,8 @@
                     <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200"
                         alt="Global Network"
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; filter: grayscale(1) brightness(0.6); z-index: 1;">
-                    <div class="reveal-on-scroll"
-                        style="position: relative; z-index: 2; width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; padding: 4rem 2rem;">
+                    <div class="reveal-on-scroll infra-grid"
+                        style="position: relative; z-index: 2; width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; padding: 4rem 2rem;">
                         <div class="glass infra-card" style="padding: 2.5rem; border-radius: 20px;">
                             <i class="fas fa-server"
                                 style="color: var(--accent); font-size: 2.5rem; margin-bottom: 1.5rem;"></i>
@@ -256,7 +305,7 @@
             <div class="container">
                 <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4rem;">
                     <div class="reveal-on-scroll" style="max-width: 800px;">
-                        <h2 style="font-size: 3rem; margin-bottom: 1.5rem;">Seamless <span
+                        <h2 class="section-title-large" style="margin-bottom: 1.5rem;">Seamless <span
                                 style="color: var(--accent);">workflow</span>
                             integration.</h2>
                         <p style="margin: 0 auto 2.5rem; font-size: 1.1rem; max-width: 700px;">NexusMeet works where you
@@ -320,7 +369,7 @@
                             style="border-radius: 0 0 24px 24px; box-shadow: 0 30px 60px rgba(0,0,0,0.3);">
                     </div>
                     <div class="reveal-on-scroll">
-                        <h2 style="color: white !important; font-size: 2.75rem;">Full Admin <span
+                        <h2 class="section-title-large" style="color: white !important;">Full Admin <span
                                 style="color: #020617;">Visibility.</span></h2>
                         <p style="color: rgba(255,255,255,0.8) !important; margin: 2rem 0;">Get deep insights into
                             meeting metrics, participant engagement, and network performance across your entire
@@ -345,9 +394,9 @@
         </section>
 
         <!-- Section 5: Enterprise CTA -->
-        <section class="section" style="padding: 120px 0; text-align: center;">
+        <section class="section" style="padding: 100px 0; text-align: center;">
             <div class="container reveal-on-scroll">
-                <h2 style="font-size: 3.5rem;">Ready to upgrade your enterprise?</h2>
+                <h2 class="enterprise-h2">Ready to upgrade your enterprise?</h2>
                 <p style="font-size: 1.25rem; margin-bottom: 3.5rem;">Join the global leaders who trust NexusMeet for
                     their mission-critical communications.</p>
                 <div class="flex-center-mobile"
